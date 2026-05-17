@@ -54,6 +54,37 @@ function getProjectAccent(project: (typeof curatedProjects)[number]) {
   return projectAccentMap[project.slug] ?? 'rgba(66, 215, 255, 0.16)'
 }
 
+function getCollageClass(project: (typeof curatedProjects)[number], index: number) {
+  const pattern = index % 6
+
+  if (project.media_type.toLowerCase().includes('gif')) {
+    return 'md:row-span-2'
+  }
+
+  if (project.media_type.toLowerCase().includes('pdf')) {
+    return 'xl:col-span-2'
+  }
+
+  if (pattern === 0) return 'xl:col-span-2'
+  if (pattern === 2) return 'md:row-span-2'
+  if (pattern === 4) return 'xl:col-span-2'
+
+  return ''
+}
+
+function getCoverClass(project: (typeof curatedProjects)[number], index: number) {
+  const pattern = index % 6
+  const mediaType = project.media_type.toLowerCase()
+
+  if (mediaType.includes('gif')) return 'min-h-[28rem]'
+  if (mediaType.includes('pdf')) return 'min-h-[22rem] xl:min-h-[30rem]'
+  if (pattern === 0) return 'min-h-[24rem] xl:min-h-[30rem]'
+  if (pattern === 2) return 'min-h-[30rem]'
+  if (pattern === 4) return 'min-h-[22rem] xl:min-h-[28rem]'
+
+  return 'min-h-[22rem]'
+}
+
 const allProjects = [...curatedProjects].sort((left, right) => {
   const leftFeatured = Number(left.metadata.featured_homepage)
   const rightFeatured = Number(right.metadata.featured_homepage)
@@ -198,10 +229,12 @@ export default function PortfolioPage() {
             </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {allProjects.map((project) => {
+          <div className="grid auto-rows-[minmax(16rem,auto)] gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {allProjects.map((project, index) => {
               const projectImage = getProjectImage(project)
               const accent = getProjectAccent(project)
+              const collageClass = getCollageClass(project, index)
+              const coverClass = getCoverClass(project, index)
               const compactSummary =
                 project.summary.length > 110 ? `${project.summary.slice(0, 107)}...` : project.summary
 
@@ -210,9 +243,9 @@ export default function PortfolioPage() {
                   key={project.id}
                   href={`/portfolio/${project.slug}`}
                   prefetch={false}
-                  className="panel-strong cinema-card group rounded-[1.8rem] p-4 hover:-translate-y-1"
+                  className={`panel-strong cinema-card group rounded-[1.8rem] p-4 hover:-translate-y-1 ${collageClass}`}
                 >
-                  <div className="project-cover">
+                  <div className={`project-cover ${coverClass}`}>
                     {projectImage ? (
                       <img
                         src={projectImage}

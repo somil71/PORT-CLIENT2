@@ -116,9 +116,14 @@ export const projects: Project[] = content.projects.map((project) => ({
 export function isAutoImportedProject(project: Project) {
   return (
     project.type === 'Imported' ||
+    project.year === 1970 ||
     project.categories.includes('imported') ||
     project.description.startsWith('Auto-imported from Drive export.') ||
-    project.description.startsWith('Imported project for ')
+    project.description.startsWith('Auto-imported project.') ||
+    project.description.startsWith('Imported project for ') ||
+    project.summary.startsWith('Imported project for ') ||
+    project.title.includes('›') ||
+    project.metadata.detail_page === false
   )
 }
 
