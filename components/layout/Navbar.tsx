@@ -4,11 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
-import { navigationLinks } from '@/lib/content'
+import { navigationLinks, rawContent } from '@/lib/content'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
+  const brand = rawContent.navigation.brand
 
   const isActive = (href: string) => pathname === href
 
@@ -17,14 +18,14 @@ export default function Navbar() {
       <div className="section-shell flex items-center justify-between gap-4 rounded-[1.6rem] border border-white/10 bg-black/20 px-5 py-4 shadow-2xl backdrop-blur-2xl">
         <Link href="/" className="flex items-center gap-3 cursor-interactive">
           <div className="flex h-12 w-12 items-center justify-center rounded-3xl border border-[#c5a059]/25 bg-[#c5a059]/10 text-xl text-[#c5a059]">
-            A
+            V
           </div>
           <div>
             <p className="text-3xl leading-none tracking-[0.1em] gradient-text" style={{ fontFamily: 'var(--font-heading)' }}>
-              AESTHETE
+              {brand}
             </p>
             <p className="text-[11px] uppercase tracking-[0.26em] text-[#e8dcc5]/70">
-              Cinematic Archive
+              Animation and Visual Effects
             </p>
           </div>
         </Link>

@@ -2,22 +2,23 @@
 
 import Link from 'next/link'
 import { Mail, Phone, MapPin, Linkedin, Youtube } from 'lucide-react'
-import { contactInfo, navigationLinks, socialLinks } from '@/lib/content'
+import { contactInfo, navigationLinks, rawContent, socialLinks } from '@/lib/content'
 
 export default function Footer() {
   const instagramLink = socialLinks.instagram[0]
+  const brand = rawContent.navigation.brand
 
   return (
     <footer className="px-4 pb-6 pt-20">
       <div className="section-shell panel cinema-card rounded-[2rem] p-8 md:p-10">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.9fr_0.9fr]">
           <div>
-            <p className="eyebrow mb-4">AESTHETE</p>
+            <p className="eyebrow mb-4">{brand}</p>
             <h3 className="mb-4 text-4xl gradient-text" style={{ fontFamily: 'var(--font-heading)' }}>
-              Archival design for cinematic storytelling
+              Cinematic visuals for modern storytelling
             </h3>
             <p className="max-w-md text-sm leading-relaxed text-[#d7ccb4]/90">
-              A curated portfolio experience for film, luxury, and editorial audiences. The work is built as a visual narrative, not just a gallery.
+              A portfolio built around editing, compositing, motion graphics, and visual storytelling for brands, filmmakers, and digital campaigns.
             </p>
           </div>
 
@@ -74,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/5 pt-5 text-center text-sm text-[#d7ccb4]/60">
-          <p>© 2026 AESTHETE. Crafted for cinematic audiences.</p>
+          <p>{rawContent.footer.copyright}</p>
         </div>
       </div>
     </footer>

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 // framer-motion is client-side only; avoid importing in server components
-import { homepageContent, projects } from '@/lib/content'
+import { homepageContent, projects, site } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'AESTHETE | Cinematic Portfolio',
-  description: 'A cinematic portfolio archive built for motion, luxury, and editorial storytelling.',
+  title: site.title,
+  description: site.description,
 }
 
 const featuredAccentMap: Record<string, string> = {
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="section-shell grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div className="panel-strong cinema-card rounded-[2rem] p-8 md:p-10 lg:p-14">
             <div className="mb-6 flex items-center gap-4">
-              <span className="eyebrow">AESTHETE Studio</span>
+              <span className="eyebrow">Vision VFX Studio</span>
               <div className="kicker-line" />
             </div>
 
