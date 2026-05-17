@@ -54,6 +54,24 @@ function getProjectAccent(project: (typeof curatedProjects)[number]) {
   return projectAccentMap[project.slug] ?? 'rgba(66, 215, 255, 0.16)'
 }
 
+function getProjectMediaClass(project: (typeof curatedProjects)[number]) {
+  const mediaType = project.media_type.toLowerCase()
+
+  if (
+    mediaType.includes('image') ||
+    mediaType.includes('pdf') ||
+    mediaType.includes('gif') ||
+    mediaType.includes('brand') ||
+    mediaType.includes('web design') ||
+    mediaType.includes('email design') ||
+    mediaType.includes('script')
+  ) {
+    return 'object-contain p-4'
+  }
+
+  return 'object-cover'
+}
+
 function getCollageClass(project: (typeof curatedProjects)[number], index: number) {
   const pattern = index % 6
 
@@ -235,6 +253,7 @@ export default function PortfolioPage() {
               const accent = getProjectAccent(project)
               const collageClass = getCollageClass(project, index)
               const coverClass = getCoverClass(project, index)
+              const mediaClass = getProjectMediaClass(project)
               const compactSummary =
                 project.summary.length > 110 ? `${project.summary.slice(0, 107)}...` : project.summary
 
@@ -250,7 +269,7 @@ export default function PortfolioPage() {
                       <img
                         src={projectImage}
                         alt={project.title}
-                        className="h-full w-full object-cover"
+                        className={`h-full w-full ${mediaClass}`}
                         loading="lazy"
                         decoding="async"
                       />
