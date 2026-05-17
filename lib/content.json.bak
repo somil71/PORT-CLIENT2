@@ -1,0 +1,733 @@
+{
+  "site": {
+    "title": "Vision VFX | Animation & Visual Effects",
+    "description": "Explore the creative world of Sanya, a multidisciplinary Animation and VFX artist specializing in immersive storytelling, cinematic video editing, and professional brand identity.",
+    "url": "vision-vfx.com",
+    "author": "Sanya Jha"
+  },
+  "navigation": {
+    "brand": "Vision VFX",
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Portfolio", "href": "/portfolio" },
+      { "label": "Showreel", "href": "/showreel" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Where Imagination Meets the Art of Animation & VFX",
+      "subheadline": "Crafting everything from high-impact logos to cinematic visual effects.",
+      "cta_primary": {
+        "text": "Explore My Work",
+        "href": "/portfolio"
+      },
+      "cta_secondary": {
+        "text": "Get in Touch",
+        "href": "/contact"
+      },
+      "keywords": [
+        "VFX & Compositing",
+        "Motion Graphics",
+        "Video Editing",
+        "Brand Identity",
+        "2D Animation",
+        "Digital Filmmaking"
+      ]
+    },
+    "featured_projects": {
+      "title": "Featured Work",
+      "projects": [
+        "baahubali-teaser-vfx",
+        "memory-corruption-comic",
+        "raid-action-trailer"
+      ]
+    },
+    "cta_section": {
+      "headline": "Ready to Bring Your Vision to Life?",
+      "subtext": "Whether you're working on a film project, need brand identity work, or want to explore motion design possibilities, let's create something meaningful together.",
+      "button_text": "Start a Conversation",
+      "button_href": "/contact"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "About Sanya | Animation & VFX Artist",
+      "description": "Learn about Sanya's journey as an artist at AAFT, her passion for fantasy-driven visuals, and her expertise in blending technical VFX with creative design."
+    },
+    "sections": {
+      "intro": {
+        "short_bio": "I'm an Animation and VFX artist driven by the challenge of transforming abstract concepts into immersive visual experiences. With a versatile skillset spanning cinematic compositing, video editing, and brand identity design, I blend technical precision with creative storytelling to build atmospheres that resonate emotionally."
+      },
+      "full_bio": {
+        "paragraph_1": "My path as a visual artist began with a fascination for how simple sketches could evolve into imaginative worlds. As a student at AAFT specializing in Animation and VFX, I've dedicated myself to mastering the tools that make these transformations possible.",
+        "paragraph_2": "From crafting the rhythmic flow of a video edit to creating intricate logo designs, I view every project as an opportunity to build a cohesive visual narrative. My technical toolkit includes Adobe Photoshop, Illustrator, Animate, After Effects, and Premiere Pro - tools I use to blend traditional design principles with modern motion techniques."
+      },
+      "passions": {
+        "title": "What Drives Me",
+        "items": [
+          {
+            "question": "What Kind of Work Do I Enjoy Most?",
+            "answer": "I'm most inspired when working at the intersection of storytelling and motion. Creating fantasy-driven animations and cinematic VFX sequences allows me to build worlds from scratch - that's where my true passion lies."
+          },
+          {
+            "question": "What Makes My Work Different?",
+            "answer": "My approach is comprehensive. I handle everything from initial storyboarding and logo design through to the final VFX composite. This full-spectrum workflow ensures the artistic vision remains consistent at every stage. I don't just add effects; I build atmospheres and experiences."
+          },
+          {
+            "question": "The Clients and Projects I'm Seeking:",
+            "answer": "I'm looking to collaborate with creative brands, independent filmmakers, and studios that value imaginative storytelling. I'm particularly drawn to projects involving fantasy world-building, cinematic teasers, and brand identities that require motion design and VFX expertise."
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "items": [
+          {
+            "degree": "BSc in Animation and VFX",
+            "school": "AAFT (Asian Academy of Film and Television)",
+            "duration": "2025 - 2028",
+            "description": "My coursework focuses on core principles of 2D and 3D animation, visual effects, and post-production. I work on hands-on projects including digital illustration, storyboarding, and cinematic compositing using industry-standard Adobe tools. I'm particularly interested in how narrative-driven art can be elevated through modern motion graphics and visual storytelling techniques."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Experience",
+        "items": [
+          {
+            "role": "Freelance Multimedia Designer",
+            "company": "Self-Employed",
+            "duration": "January 2026 - Present",
+            "description": "I collaborate with small businesses and individuals to develop comprehensive brand identities, including custom logos and marketing collateral. I also provide end-to-end video editing services, transforming raw footage into engaging short-form content and promotional teasers.",
+            "achievements": "I've successfully delivered complete branding packages (logos, business cards, social media assets) for clients in construction, fashion, food, and beverage industries, helping them establish a consistent and professional visual presence.",
+            "tools": "Adobe Photoshop, Illustrator, Premiere Pro"
+          }
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "seo": {
+      "title": "Portfolio | Sanya's VFX & Animation Work",
+      "description": "View a curated gallery of work including cinematic teasers, 2D animations, and branding projects for fashion, food, and lifestyle companies."
+    },
+    "intro": "Explore my work across VFX, animation, video editing, motion graphics, and brand design. Each project reflects my commitment to blending technical mastery with creative storytelling.",
+    "categories": [
+      {
+        "slug": "vfx",
+        "name": "VFX",
+        "intro": "Expanding reality through digital artistry.",
+        "description": "Expanding reality through digital artistry. I specialize in compositing, rotoscoping, and integrating digital elements into live-action footage. My goal is to create seamless VFX that feels grounded and authentic within each shot's environment."
+      },
+      {
+        "slug": "video-editing",
+        "name": "Video Editing",
+        "intro": "The art of rhythmic storytelling.",
+        "description": "The art of rhythmic storytelling. I showcase my ability to cut and assemble footage with precision pacing, emotional impact, and narrative flow. From cinematic teasers to short-form social content, every project prioritizes the perfect sync between audio and visuals."
+      },
+      {
+        "slug": "2d-animation",
+        "name": "2D Animation",
+        "intro": "Bringing characters and concepts to life.",
+        "description": "Bringing characters and concepts to life. Using Adobe Animate, I transform static illustrations into fluid, engaging narratives. My work emphasizes natural movement, character performance, and personality."
+      },
+      {
+        "slug": "motion-graphics",
+        "name": "Motion Graphics",
+        "intro": "Where design meets dynamic movement.",
+        "description": "Where design meets dynamic movement. I specialize in animating typography, icons, and UI elements to add energy and clarity to visual messages. Motion becomes a tool to guide the viewer's eye and enhance the overall narrative."
+      },
+      {
+        "slug": "graphic-design",
+        "name": "Graphic Design",
+        "intro": "Building the visual foundation of a brand.",
+        "description": "Building the visual foundation of a brand. From minimalist logos to detailed business cards and posters, I create designs that are both functional and visually striking. Every design reflects a brand's unique personality through typography, color, and composition."
+      },
+      {
+        "slug": "digital-filmmaking",
+        "name": "Digital Filmmaking",
+        "intro": "Capturing worlds through a cinematic lens.",
+        "description": "Capturing worlds through a cinematic lens. I focus on the structural elements of film - from concept through execution. This includes storyboarding, visual direction, and understanding how camera angles, lighting, and composition create immersive environments."
+      },
+      {
+        "slug": "freelance-academic",
+        "name": "Freelance & Academic",
+        "intro": "A record of professional growth and collaboration.",
+        "description": "A portfolio of professional growth and real-world collaboration. This section features college assignments from AAFT alongside freelance client work, demonstrating versatility, deadline management, and commitment to continuous learning."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "baahubali-teaser-vfx",
+      "title": "Baahubali: The Beginning Teaser Concept",
+      "slug": "baahubali-teaser-vfx",
+      "categories": ["vfx", "video-editing", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Video",
+      "summary": "A cinematic re-edit showcasing epic pacing and rhythmic visual storytelling. This high-energy teaser demonstrates proficiency in trailer editing and sound design synchronization.",
+      "detail_line": "Mastering the art of the hook through epic scale and rhythmic editing.",
+      "description": "A cinematic re-edit and enhancement of the Baahubali teaser, created to master high-impact pacing and visual effects integration. The project challenged me to maintain the epic scale of the original while creating a fresh narrative perspective.\n\nI focused intensely on audio-visual synchronization, carefully selecting key moments that define the film's grand, larger-than-life quality. Every cut was intentional and powerful, creating a viewing experience driven by rhythm and emotional impact.",
+      "role": "Editor & VFX Artist",
+      "team": "Solo",
+      "client": "AAFT",
+      "goal": "To create a fresh narrative perspective while preserving the original's epic scale.",
+      "target_audience": "Film enthusiasts and VFX recruiters.",
+      "outcome": "A 60-second high-impact teaser uploaded to YouTube.",
+      "tools": ["Adobe Premiere Pro", "YouTube Creator Tools"],
+      "color_mood": "Cinematic, Epic, Warm Gold",
+      "process": {
+        "challenge": "Condensing massive amounts of footage into a cohesive 60-second teaser without losing narrative weight required strategic editing and precise sound design timing.",
+        "concept": "I employed rhythmic cutting synchronized with a building soundtrack, using moments of silence and dramatic beat drops to emphasize the scale and intensity of action sequences.",
+        "steps": ["Footage review", "Audio selection", "Rough cut", "VFX enhancement", "Final export"],
+        "proud_decisions": "Every cut was designed to feel intentional, powerful, and emotionally driven.",
+        "learned": "Understanding how to manage copyright content for educational purposes and the critical role pacing plays in keeping audiences engaged throughout promotional content."
+      },
+      "metadata": {
+        "featured_homepage": true,
+        "in_showreel": true,
+        "detail_page": true
+      },
+      "video_link": "https://youtu.be/GSnmDo4weBs?si=EuaPrjYz1cuKZHtH"
+    },
+    {
+      "id": "memory-corruption-comic",
+      "title": "Memory Corruption",
+      "slug": "memory-corruption-comic",
+      "categories": ["2d-animation", "graphic-design", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Case Study / Image",
+      "summary": "An experimental digital comic blending fantasy with glitch aesthetics. This passion project explores pixel-fade effects and emotional visual narratives.",
+      "detail_line": "Where pixels fade and memories lie.",
+      "description": "A passion project merging fantasy storytelling with a unique \"glitch\" aesthetic. Memory Corruption explores a world where digital decay is visible - represented through pixelation and visual degradation that mirrors the characters' emotional states.\n\nI designed the entire visual identity for this digital comic, focusing on how typography and visual composition can reflect the psychological journey of the characters. The central technique - pixel-fade effects where characters' edges dissolve into digital noise - became the visual metaphor for memory loss itself.",
+      "role": "Creator, Illustrator & Designer",
+      "team": "Solo",
+      "client": "AAFT",
+      "goal": "To explore a unique visual style combining traditional comic layout with digital corruption effects.",
+      "target_audience": "Sci-fi and fantasy fans and lovers of experimental digital art.",
+      "outcome": "Complete introduction sequence and a series of concept art panels.",
+      "tools": ["Adobe Photoshop", "Adobe Illustrator", "AI-Assisted Workflows (ChatGPT, Gemini, Kling, Grok)"],
+      "color_mood": "Dark, Moody, Neon Blue & Static Grey",
+      "process": {
+        "challenge": "Visualizing memory loss in a way that felt intentional rather than messy required careful planning and experimentation with glitch effects that enhanced rather than obscured the narrative.",
+        "concept": "By developing the pixel-fade technique and applying it consistently across panels, I created a cohesive visual language that communicated character states without breaking the narrative flow.",
+        "steps": ["Concept sketching", "Character design", "Panel layout", "Glitch effect application", "Final lettering"],
+        "proud_decisions": "The fading-pixel visual language became the emotional signature of the story.",
+        "learned": "How AI tools can accelerate visual conceptualization and storyboarding while maintaining artistic direction and emotional authenticity."
+      },
+      "metadata": {
+        "featured_homepage": true,
+        "in_showreel": false,
+        "detail_page": true
+      }
+    },
+    {
+      "id": "raid-action-trailer",
+      "title": "RAID - Action Trailer Edit",
+      "slug": "raid-action-trailer",
+      "categories": ["video-editing", "digital-filmmaking", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Video",
+      "summary": "A fast-paced action trailer edit emphasizing tension and dramatic storytelling through precision cutting and sound design.",
+      "detail_line": "High-octane action through precision editing.",
+      "description": "A fast-paced trailer edit of the film RAID, challenging me to extract raw intensity and condense it into a compelling 90-second experience. The focus was rapid-fire cuts, dramatic sound design, and building tension through precise pacing.\n\nI prioritized tension-building through quick-cut transitions and synchronized audio cues, ensuring every moment contributes to the overall energy without losing narrative clarity.",
+      "role": "Editor",
+      "team": "Solo",
+      "client": "AAFT",
+      "goal": "To maintain narrative coherence while using rapid cuts to convey action and danger.",
+      "target_audience": "Film enthusiasts and action genre fans.",
+      "outcome": "High-energy trailer showcasing advanced editing technique.",
+      "tools": ["Adobe Premiere Pro"],
+      "color_mood": "Dark, Intense, High Contrast",
+      "metadata": {
+        "featured_homepage": true,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "video_link": "https://youtu.be/NEN6SberCv4?si=XbFMvPAtdAnC6dbr"
+    },
+    {
+      "id": "she-never-left-part1",
+      "title": "She Never Left the Classroom - Part 1",
+      "slug": "she-never-left-part1",
+      "categories": ["digital-filmmaking", "2d-animation"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Video",
+      "summary": "The first chapter of an atmospheric short film exploring mystery through environment-driven storytelling and cinematography.",
+      "detail_line": "Atmosphere through visual storytelling.",
+      "description": "A two-part atmospheric short film exploring mystery through environment-driven storytelling. Part 1 establishes the eerie, mysterious narrative in an abandoned classroom. Part 2 concludes with integrated visual effects that amplify supernatural elements.",
+      "role": "Director, Editor & VFX Artist",
+      "team": "Solo",
+      "client": "AAFT",
+      "goal": "To build atmosphere through thoughtful composition, cinematography, and visual direction.",
+      "target_audience": "Film students and short film enthusiasts.",
+      "outcome": "An atmospheric opening that invites viewers deeper into the mystery.",
+      "tools": ["Professional cinematography and post-production techniques"],
+      "color_mood": "Eerie, Atmospheric, Cool Tones",
+      "metadata": {
+        "featured_homepage": true,
+        "in_showreel": false,
+        "detail_page": false
+      },
+      "video_link": "https://youtu.be/_gkDxkgHniw?si=A3XJjvaOzaOMNV4m"
+    },
+    {
+      "id": "she-never-left-part2",
+      "title": "She Never Left the Classroom - Part 2",
+      "slug": "she-never-left-part2",
+      "categories": ["digital-filmmaking", "vfx"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Video",
+      "summary": "The conclusion featuring integrated visual effects that amplify supernatural narrative elements.",
+      "detail_line": "VFX meets narrative resolution.",
+      "description": "A two-part atmospheric short film exploring mystery through environment-driven storytelling. Part 1 establishes the eerie, mysterious narrative in an abandoned classroom. Part 2 concludes with integrated visual effects that amplify supernatural elements.",
+      "role": "Director, Editor & VFX Artist",
+      "team": "Solo",
+      "client": "AAFT",
+      "goal": "To create a climactic supernatural payoff through visual effects and cinematic tension.",
+      "target_audience": "Film students and mystery/thriller fans.",
+      "outcome": "A complete two-part film with integrated VFX storytelling.",
+      "tools": ["Professional cinematography and post-production techniques"],
+      "color_mood": "Supernatural, Intense, Blue & Purple",
+      "metadata": {
+        "featured_homepage": true,
+        "in_showreel": false,
+        "detail_page": false
+      },
+      "video_link": "https://youtu.be/gkDxkgHniw?si=A3XJjvaOzaOMNV4m",
+      "resource_group_slugs": ["digital-filmmaking-and-editing", "storyboarding-and-scripting"]
+    },
+    {
+      "id": "luxury-landing-page-design",
+      "title": "Luxury Landing Page Design System",
+      "slug": "luxury-landing-page-design",
+      "categories": ["graphic-design", "motion-graphics", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Case Study / Web Design",
+      "summary": "A polished landing page concept built through low-fidelity planning, PSD composition, HTML/CSS implementation, and supporting image asset design.",
+      "detail_line": "A web media project shaped from wireframe to coded presentation.",
+      "description": "This project documents the complete build-out of a branded landing page system, from low-fidelity planning through Photoshop exploration and final front-end implementation.\n\nIt reflects my interest in layout rhythm, promotional storytelling, visual hierarchy, and translating static compositions into responsive web-ready design assets.",
+      "role": "Designer & Front-End Builder",
+      "team": "Solo",
+      "client": "AAFT / Web Media Design",
+      "goal": "To build a visually cohesive landing page and demonstrate design-to-code workflow across planning, mockup, and implementation.",
+      "target_audience": "Creative directors, branding clients, and design instructors.",
+      "outcome": "A complete landing page package with PSD, low-fidelity design, HTML/CSS/JS files, and curated image assets.",
+      "tools": ["Adobe Photoshop", "HTML", "CSS", "JavaScript"],
+      "color_mood": "Premium, Editorial, High Contrast",
+      "process": {
+        "challenge": "Balancing promotional clarity with a premium visual tone while keeping the structure usable for implementation.",
+        "concept": "A dark, luxury-forward landing page that feels styled like a boutique campaign rather than a generic student assignment.",
+        "steps": ["Wireframe", "Visual exploration", "PSD composition", "Asset prep", "HTML/CSS build", "Interaction layer"],
+        "proud_decisions": "Maintaining consistency between the low-fidelity layout, the PSD template, and the final coded page.",
+        "learned": "How much stronger a web design becomes when structure, branding, and implementation are designed together from the beginning."
+      },
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["web-media-designing"]
+    },
+    {
+      "id": "myntra-emailer-campaign",
+      "title": "Myntra Emailer Campaign Study",
+      "slug": "myntra-emailer-campaign",
+      "categories": ["graphic-design", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Case Study / Email Design",
+      "summary": "An emailer design exercise that combines campaign structure, visual merchandising, PSD planning, and coded HTML email layout.",
+      "detail_line": "A focused study in email composition, marketing hierarchy, and visual persuasion.",
+      "description": "This project explores the structure of branded email marketing through a Myntra-inspired emailer build. It includes planning, PSD layout, image preparation, and a coded HTML email file.\n\nThe work highlights how promotional messaging, image flow, and CTA structure can be organized into a compact but visually engaging communication piece.",
+      "role": "Designer & Email Layout Builder",
+      "team": "Solo",
+      "client": "AAFT / Web Media Design",
+      "goal": "To create a campaign-ready emailer that communicates offers and product energy with strong visual hierarchy.",
+      "target_audience": "Marketing teams, e-commerce brands, and instructors assessing digital communication skills.",
+      "outcome": "A coded HTML emailer supported by PSD design and campaign image assets.",
+      "tools": ["Adobe Photoshop", "HTML Email Design", "Graphic Asset Preparation"],
+      "color_mood": "Commercial, Bright, Retail-Led",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["web-media-designing"]
+    },
+    {
+      "id": "visual-communication-studies",
+      "title": "Visual Communication Studies",
+      "slug": "visual-communication-studies",
+      "categories": ["graphic-design", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Presentation / PDF",
+      "summary": "A collection of visual communication work focused on color systems, logo thinking, poster design, and presentation-led design analysis.",
+      "detail_line": "Research-backed design thinking translated into visual presentations.",
+      "description": "This project groups together core visual communication exercises around logo studies, redesign thinking, color theory, and presentation graphics.\n\nRather than a single output, it represents a body of academic design work that helped shape my understanding of composition, visual language, and brand interpretation.",
+      "role": "Researcher, Designer & Presenter",
+      "team": "Solo",
+      "client": "AAFT / Visual Communication",
+      "goal": "To develop a stronger foundation in design analysis and visual communication systems.",
+      "target_audience": "Design faculty, branding collaborators, and presentation-focused viewers.",
+      "outcome": "A compact archive of Illustrator files and PDF presentations covering multiple design investigations.",
+      "tools": ["Adobe Illustrator", "Presentation Design", "Color Theory Frameworks"],
+      "color_mood": "Analytical, Structured, Graphic",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["visual-communication"]
+    },
+    {
+      "id": "storyboard-screenwriting-lab",
+      "title": "Storyboard & Screenwriting Lab",
+      "slug": "storyboard-screenwriting-lab",
+      "categories": ["digital-filmmaking", "2d-animation", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Script / Storyboard",
+      "summary": "A development archive of storyboard sheets, screenplay drafts, AI exploration, and visual planning documents for narrative work.",
+      "detail_line": "Building stories before they become motion pieces.",
+      "description": "This project brings together scripting and storyboard materials that support my filmmaking and visual storytelling process. It includes screenplay documents, storyboard pages, AI-assisted ideation, and archival planning materials.\n\nThe set demonstrates how I think through pacing, shot logic, and emotional progression before moving into production or animation.",
+      "role": "Writer, Storyboard Artist & Concept Planner",
+      "team": "Solo",
+      "client": "AAFT / Storyboarding & Scripting",
+      "goal": "To develop stronger narrative structure, visual planning, and story communication before production.",
+      "target_audience": "Film mentors, directors, and collaborators interested in process work.",
+      "outcome": "A detailed reference archive covering scripts, storyboard pages, and concept-driven visual planning assets.",
+      "tools": ["Storyboarding", "Screenwriting", "AI-Assisted Concept Development"],
+      "color_mood": "Narrative, Exploratory, Process-Driven",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["storyboarding-and-scripting"]
+    },
+    {
+      "id": "premiere-editing-practice-lab",
+      "title": "Premiere Editing Practice Lab",
+      "slug": "premiere-editing-practice-lab",
+      "categories": ["video-editing", "vfx", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Video / Editing Archive",
+      "summary": "A collection of editing practice outputs including teasers, trailers, green-screen cleanup, and color correction studies built in Premiere Pro.",
+      "detail_line": "A technical archive of editorial pacing, cleanup, and finishing exercises.",
+      "description": "This project collects practical Premiere Pro work beyond the headline portfolio films. It includes teaser exports, trailer versions, green screen work, and color correction studies.\n\nTogether these pieces show the technical repetition behind sharper pacing, cleaner composites, and more confident post-production decision-making.",
+      "role": "Editor & Post-Production Artist",
+      "team": "Solo",
+      "client": "AAFT / Practice Archive",
+      "goal": "To strengthen editorial speed, cleanup technique, and finishing consistency across varied footage types.",
+      "target_audience": "Post-production reviewers, editing clients, and instructors.",
+      "outcome": "A practical archive of project files and exported studies that support my larger editorial portfolio.",
+      "tools": ["Adobe Premiere Pro", "Color Correction", "Green Screen Cleanup"],
+      "color_mood": "Technical, Fast, Process-Focused",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["digital-filmmaking-and-editing", "learning-and-reference"],
+      "reference_links": [
+        { "label": "Premiere Pro Tutorial 1", "url": "https://youtu.be/kL-NHPc_I7o?si=m432n59p8woneSwT&utm_source=chatgpt.com" },
+        { "label": "Premiere Pro Tutorial 2", "url": "https://youtu.be/Zo6WR8nRc34?si=LIxGK_4rKBj78ri_&utm_source=chatgpt.com" },
+        { "label": "Premiere Pro Tutorial 3", "url": "https://youtu.be/4lHWa92B_7k?si=Vg1_2Jg413OqSE-Y&utm_source=chatgpt.com" },
+        { "label": "Premiere Pro Tutorial 4", "url": "https://youtu.be/GSnmDo4weBs?si=-T_pW6JjhZvdGLB4&utm_source=chatgpt.com" }
+      ]
+    },
+    {
+      "id": "after-effects-motion-graphics-lab",
+      "title": "After Effects Motion Graphics Lab",
+      "slug": "after-effects-motion-graphics-lab",
+      "categories": ["motion-graphics", "vfx", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "Motion Study",
+      "summary": "A motion graphics archive built in After Effects, focused on timing, looping, and effect experimentation.",
+      "detail_line": "Short studies that sharpen movement, rhythm, and motion confidence.",
+      "description": "This project groups motion-graphics practice files from After Effects, including looping experiments and effects-driven studies.\n\nThese small-format exercises are where I test movement language, transition rhythm, and visual energy before applying those instincts to larger portfolio work.",
+      "role": "Motion Designer",
+      "team": "Solo",
+      "client": "Practice Archive",
+      "goal": "To strengthen timing, loop logic, and effects-driven motion design thinking.",
+      "target_audience": "Motion design clients, recruiters, and instructors.",
+      "outcome": "A clean practice archive showing motion experiments and process-based design confidence.",
+      "tools": ["Adobe After Effects", "Motion Graphics", "Animation Timing"],
+      "color_mood": "Energetic, Experimental, Digital",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["motion-graphics-animation-design", "learning-and-reference"],
+      "reference_links": [
+        { "label": "Motion Graphics Tutorial 1", "url": "https://youtu.be/qHOvGcsmFpI?si=kuSeoKB0NPR8yPqo&utm_source=chatgpt.com" },
+        { "label": "Motion Graphics Tutorial 2", "url": "https://youtu.be/d_Z-ERI-DhE?si=Vwtn7BeFka2VQjN4&utm_source=chatgpt.com" },
+        { "label": "Motion Graphics Short 1", "url": "https://youtube.com/shorts/GlBf_0daeP4?si=SMgiWmJDe81jn9_y&utm_source=chatgpt.com" },
+        { "label": "Motion Graphics Short 2", "url": "https://youtube.com/shorts/SVMH_LMalgk?si=xoLakmAavWmEpb-Q&utm_source=chatgpt.com" }
+      ]
+    },
+    {
+      "id": "photoshop-poster-and-matte-series",
+      "title": "Photoshop Poster & Matte Series",
+      "slug": "photoshop-poster-and-matte-series",
+      "categories": ["graphic-design", "2d-animation", "freelance-academic"],
+      "year": 2025,
+      "type": "Academic",
+      "media_type": "Image / PDF",
+      "summary": "A set of Photoshop-led projects spanning matte painting, social posters, and magazine cover composition.",
+      "detail_line": "Image-making that moves between poster communication and cinematic environment design.",
+      "description": "This project collects a broader Photoshop practice archive, including matte painting, poster layouts, social-media compositions, and editorial cover work.\n\nThe range shows how I think about atmosphere, typography, and compositional framing across both promotional and imaginative image-making.",
+      "role": "Designer & Digital Artist",
+      "team": "Solo",
+      "client": "Practice Archive / Academic",
+      "goal": "To strengthen compositional confidence across posters, environmental art, and branded social visuals.",
+      "target_audience": "Design reviewers, poster clients, and portfolio viewers interested in static visual craft.",
+      "outcome": "A concentrated archive of Photoshop outputs that showcase both conceptual and commercial design ability.",
+      "tools": ["Adobe Photoshop", "Matte Painting", "Poster Design", "Editorial Layout"],
+      "color_mood": "Stylized, Atmospheric, Graphic",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["motion-graphics-animation-design"]
+    },
+    {
+      "id": "animate-fundamentals-studies",
+      "title": "Animate Fundamentals Studies",
+      "slug": "animate-fundamentals-studies",
+      "categories": ["2d-animation", "motion-graphics", "freelance-academic"],
+      "year": 2026,
+      "type": "Academic",
+      "media_type": "GIF / Animation Study",
+      "summary": "A fundamentals archive covering pendulums, walk cycles, blinks, tracing, and movement exercises in Adobe Animate.",
+      "detail_line": "Small studies that build stronger motion instincts frame by frame.",
+      "description": "This project collects Adobe Animate exercises focused on timing, loops, tracing, body mechanics, and expressive movement.\n\nThough compact individually, these studies are essential practice pieces that build the physical logic and rhythm behind stronger 2D animation work.",
+      "role": "2D Animation Student",
+      "team": "Solo",
+      "client": "Practice Archive",
+      "goal": "To improve the foundations of motion through repeated animation studies and controlled movement exercises.",
+      "target_audience": "Animation faculty, recruiters, and viewers interested in process progression.",
+      "outcome": "A visible archive of animation drills that show both patience and technical improvement.",
+      "tools": ["Adobe Animate", "Timing", "Walk Cycles", "Tracing Exercises"],
+      "color_mood": "Playful, Technical, Study-Led",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["motion-graphics-animation-design"]
+    },
+    {
+      "id": "illustrator-brand-identity-suite",
+      "title": "Illustrator Brand Identity Suite",
+      "slug": "illustrator-brand-identity-suite",
+      "categories": ["graphic-design", "freelance-academic"],
+      "year": 2026,
+      "type": "Freelance",
+      "media_type": "Brand Archive",
+      "summary": "A multi-brand Illustrator archive featuring logos, business cards, packaging, letterheads, and product-facing design systems.",
+      "detail_line": "Brand identity work built across multiple industries and visual tones.",
+      "description": "This project brings together a large body of Illustrator work, including jewellery, makeup, construction, furniture, chocolate, and energy drink branding assets.\n\nInstead of one isolated identity, this suite shows how I adapt typography, shape language, layout, and print assets to different brand personalities while keeping each system coherent.",
+      "role": "Brand Designer",
+      "team": "Solo",
+      "client": "Freelance and Academic Mix",
+      "goal": "To build consistent identity systems across multiple industries using logo design, collateral, and packaging principles.",
+      "target_audience": "Brand clients, startups, and design faculty.",
+      "outcome": "A broad Illustrator archive demonstrating range, adaptability, and print-ready execution across brand systems.",
+      "tools": ["Adobe Illustrator", "Logo Design", "Business Cards", "Packaging", "Letterhead Design"],
+      "color_mood": "Versatile, Branded, Client-Facing",
+      "metadata": {
+        "featured_homepage": false,
+        "in_showreel": false,
+        "detail_page": true
+      },
+      "resource_group_slugs": ["motion-graphics-animation-design"]
+    }
+  ],
+  "services": [
+    {
+      "id": "vfx-compositing",
+      "title": "Cinematic VFX & Compositing",
+      "tagline": "Visual Effects & Cinematic Compositing",
+      "description": "Transforming raw footage into immersive visual experiences. I add digital effects, perform clean-ups, and create seamless visual layers that enhance your footage.",
+      "for_who": "Independent filmmakers, YouTubers, and creative agencies looking to elevate production value with high-end visual effects.",
+      "deliverables": "Finalized video shots with integrated digital effects, seamless background replacements using chroma key technology, and polished visual layers that feel native to your footage.",
+      "why_hire": "I specialize in invisible VFX - every digital element feels like it genuinely belongs in the physical world of the shot. The technology serves the story, never overshadows it."
+    },
+    {
+      "id": "motion-design-animation",
+      "title": "2D Animation & Motion Graphics",
+      "tagline": "Motion Design & 2D Animation",
+      "description": "Bringing characters and concepts to life through fluid animation. I add dynamic movement to typography, logos, and static designs, transforming them into engaging visual narratives.",
+      "for_who": "Businesses needing explainer videos, social media content creators, and brands looking to animate logos and bring static designs to life.",
+      "deliverables": "Character animations, animated typography, motion-based social media ads, and custom graphics that move with purpose and personality.",
+      "why_hire": "I combine traditional animation principles with modern motion graphics techniques, creating movement that feels natural, intentional, and engaging. Every animation serves a narrative purpose."
+    },
+    {
+      "id": "video-editing",
+      "title": "Professional Video Editing & Post-Production",
+      "tagline": "Professional Video Editing",
+      "description": "Crafting high-impact teasers, promos, and short films with emphasis on rhythm, narrative pacing, and audio-visual synchronization. Your footage becomes a cohesive, compelling story.",
+      "for_who": "Marketing teams, content creators, and filmmakers who need raw footage transformed into polished, high-energy final products.",
+      "deliverables": "High-definition final edits, cinematic teasers, color-graded footage, and perfectly synchronized audio-visual content that keeps audiences engaged.",
+      "why_hire": "My background in storyboarding allows me to edit with a director's mindset. I focus on rhythm and pacing to create narratives that captivate from beginning to end."
+    },
+    {
+      "id": "brand-identity",
+      "title": "Brand Identity & Graphic Design",
+      "tagline": "Complete Brand Identity Design",
+      "description": "Designing the complete visual identity for your brand - from logos and business cards to comprehensive brand systems. Everything works together to communicate your brand's unique personality.",
+      "for_who": "Startups and small businesses (fashion brands, food companies, makeup labels) needing professional, consistent visual identity that stands out.",
+      "deliverables": "Custom logo suites, business card designs, letterheads, and brand style guides that work seamlessly across print and digital platforms.",
+      "why_hire": "I don't create isolated designs - I build visual systems. Every element reflects your brand's personality and functions across all applications. Form and function work together."
+    },
+    {
+      "id": "storyboarding",
+      "title": "Storyboarding & Visual Concept Art",
+      "tagline": "Storyboarding & Concept Layouts",
+      "description": "Translating scripts and ideas into detailed visual layouts. I create the blueprint that guides your project from concept through execution.",
+      "for_who": "Directors, comic writers, and advertisers who need to visualize concepts before production begins. Storyboards align vision before committing resources.",
+      "deliverables": "Detailed 10-12 panel storyboards, character concept sheets, and visual flowcharts that clearly communicate your vision to your team.",
+      "why_hire": "I excel at translating complex emotions and imaginative worlds into clear, actionable visuals. My experience with projects like Memory Corruption demonstrates this ability."
+    }
+  ],
+  "showreel": {
+    "seo": {
+      "title": "Showreel | Sanya's VFX and Motion Graphics",
+      "description": "Watch Sanya's latest VFX and Motion Graphics showreel, featuring highlights from the Baahubali teaser, original short films, and logo animations."
+    },
+    "intro": "A curated collection of my best work in video editing, VFX, and motion graphics. These projects showcase my approach to cinematic storytelling and technical excellence.",
+    "videos": [
+      {
+        "id": "baahubali-teaser",
+        "title": "Baahubali: The Beginning - Cinematic Teaser",
+        "category": "Video Editing / VFX",
+        "description": "A high-octane re-edit focusing on rhythmic cutting and epic visual scale. This AAFT academic project demonstrates trailer editing, sound design, and cinematic pacing mastery.",
+        "link": "https://youtu.be/GSnmDo4weBs?si=EuaPrjYz1cuKZHtH",
+        "featured_reel": true,
+        "is_short": false,
+        "homepage": true
+      },
+      {
+        "id": "baahubali-extended",
+        "title": "Baahubali: The Beginning - Extended Trailer",
+        "category": "Video Editing",
+        "description": "An extended exploration diving deeper into character arcs and world-building through advanced post-production techniques.",
+        "link": "https://youtu.be/4lHWa92B_7k?si=AtDMMozG9qI0tcky",
+        "featured_reel": false,
+        "is_short": false,
+        "homepage": false
+      },
+      {
+        "id": "raid-trailer",
+        "title": "RAID - Action Trailer Edit",
+        "category": "Video Editing / Digital Filmmaking",
+        "description": "Fast-paced trailer editing emphasizing tension, quick-cut transitions, and dramatic sound design.",
+        "link": "https://youtu.be/NEN6SberCv4?si=XbFMvPAtdAnC6dbr",
+        "featured_reel": false,
+        "is_short": false,
+        "homepage": true
+      },
+      {
+        "id": "she-never-left-part1",
+        "title": "She Never Left the Classroom - Part 1",
+        "category": "Digital Filmmaking / 2D Animation",
+        "description": "An atmospheric short film exploring mystery through environment-driven storytelling and cinematography.",
+        "link": "https://youtu.be/_gkDxkgHniw?si=A3XJjvaOzaOMNV4m",
+        "featured_reel": false,
+        "is_short": false,
+        "homepage": true
+      },
+      {
+        "id": "she-never-left-part2",
+        "title": "She Never Left the Classroom - Part 2",
+        "category": "Digital Filmmaking / VFX",
+        "description": "The conclusion featuring integrated visual effects that amplify supernatural narrative elements.",
+        "link": "https://youtu.be/gkDxkgHniw?si=A3XJjvaOzaOMNV4m",
+        "featured_reel": false,
+        "is_short": false,
+        "homepage": true
+      }
+    ]
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact Sanya | VFX & Animation Inquiries",
+      "description": "Get in touch with Sanya for freelance VFX, video editing, or brand design collaborations. Available for remote projects and local opportunities in India."
+    },
+    "headline": "Let's Bring Your Vision to Life.",
+    "subtext": "Whether you have a fully-formed script, a rough concept, or just want to discuss possibilities, I'd love to hear from you. I'm currently open to projects where I can bring my VFX, animation, and design expertise to create something truly memorable.",
+    "best_for": "Freelance VFX and video editing, brand identity projects, motion design commissions, and creative collaborations.",
+    "response_style": "Friendly and project-focused. I typically respond within 24-48 hours.",
+    "availability": "Remote-based and available for local opportunities in UP Ghaziabad/AAFT campus on a freelance basis.",
+    "contact_info": {
+      "email": "jhasanya3@gmail.com",
+      "phone": "9386901616",
+      "whatsapp": ""
+    },
+    "social_links": {
+      "linkedin": "https://www.linkedin.com/in/sanya566b3b381?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "instagram": [
+        "https://www.instagram.com/sanyajha8?igsh=ZjQybGdxZmVkeXRw",
+        "https://www.instagram.com/sanyajha66?igsh=OGJyOHNoaWRwZmh6"
+      ],
+      "youtube": "https://www.youtube.com/@sanya_jha",
+      "behance": "https://www.behance.net/sanyajha"
+    }
+  },
+  "skills": {
+    "technical": [
+      "2D Animation",
+      "VFX Compositing",
+      "Motion Graphics",
+      "Digital Illustration",
+      "Storyboarding"
+    ],
+    "creative": [
+      "Video Editing",
+      "Color Grading",
+      "Audio Synchronization",
+      "Cinematic Pacing",
+      "Sound Design"
+    ],
+    "software": [
+      "Logo Design",
+      "Brand Identity Systems",
+      "Typography",
+      "Business Collateral",
+      "Poster Design",
+      "Vector Art",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe Animate",
+      "Adobe Premiere Pro",
+      "Adobe After Effects",
+      "InDesign",
+      "AI-Assisted Workflows"
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Sanjeev Mishra",
+      "role": "Owner",
+      "company": "Sarthak Construction",
+      "text": "Sanya took my vision for a brand and turned it into something professional and eye-catching. The logo and business cards perfectly captured the vibe we wanted. She is creative, easy to work with, and very professional."
+    }
+  ],
+  "footer": {
+    "copyright": "\u00a9 2026 Vision VFX. All Rights Reserved."
+  }
+}
