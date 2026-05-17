@@ -1,6 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { curatedProjects, portfolioCategories, rawContent } from '@/lib/content'
+import {
+  curatedProjects,
+  getProjectResources,
+  portfolioCategories,
+  projectArchives,
+  rawContent,
+} from '@/lib/content'
+import {
+  getResourcePreviewImage,
+  getYouTubeThumbnail,
+  pickProjectPreviewResource,
+} from '@/lib/project-media'
 
 export const metadata: Metadata = {
   title: rawContent.portfolio.seo.title,
@@ -24,25 +35,19 @@ const projectAccentMap: Record<string, string> = {
   'illustrator-brand-identity-suite': 'rgba(77, 212, 164, 0.12)',
 }
 
-function getYouTubeThumbnail(url?: string) {
-  if (!url) return null
-
-  try {
-    const parsed = new URL(url)
-
-    if (parsed.hostname.includes('youtu.be')) {
-      return `https://img.youtube.com/vi/${parsed.pathname.slice(1)}/hqdefault.jpg`
-    }
-
-    const videoId = parsed.searchParams.get('v')
-    return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null
-  } catch {
-    return null
-  }
-}
-
 function getProjectImage(project: (typeof curatedProjects)[number]) {
-  return getYouTubeThumbnail(project.video_link)
+  const videoThumbnail = getYouTubeThumbnail(project.video_link)
+
+  if (videoThumbnail) {
+    return videoThumbnail
+  }
+
+  const previewResource = pickProjectPreviewResource(
+    getProjectResources(project),
+    projectArchives[project.slug]?.hero_resource_title
+  )
+
+  return previewResource ? getResourcePreviewImage(previewResource) : null
 }
 
 function getProjectAccent(project: (typeof curatedProjects)[number]) {
@@ -124,10 +129,12 @@ export default function PortfolioPage() {
                 <img
                   src={getProjectImage(featuredProjects[0]) ?? ''}
                   alt={featuredProjects[0].title}
-                  className="w-full h-auto object-contain"
+                  className="h-full w-full object-cover"
                   decoding="async"
                 />
-              ) : null}
+              ) : (
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_28%),linear-gradient(180deg,rgba(14,19,26,0.32),rgba(4,7,11,0.92))]" />
+              )}
               <div
                 className="absolute inset-0"
                 style={{
@@ -210,7 +217,7 @@ export default function PortfolioPage() {
                       <img
                         src={projectImage}
                         alt={project.title}
-                        className="w-full h-auto object-contain"
+                        className="h-full w-full object-cover"
                         loading="lazy"
                         decoding="async"
                       />

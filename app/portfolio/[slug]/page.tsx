@@ -1,44 +1,17 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import ProjectDetailExperience from '@/components/portfolio/ProjectDetailExperience'
-import { curatedProjects, driveResources, projectArchives, projects } from '@/lib/content'
+import { curatedProjects, getProjectResources, projectArchives, projects } from '@/lib/content'
+import {
+  getResourcePreviewImage,
+  getYouTubeEmbedUrl,
+  getYouTubeThumbnail,
+  pickProjectPreviewResource,
+} from '@/lib/project-media'
 
 type PageProps = {
   params: {
     slug: string
-  }
-}
-
-function getYouTubeEmbedUrl(url?: string) {
-  if (!url) return null
-
-  try {
-    const parsed = new URL(url)
-    if (parsed.hostname.includes('youtu.be')) {
-      return `https://www.youtube.com/embed/${parsed.pathname.slice(1)}`
-    }
-
-    const videoId = parsed.searchParams.get('v')
-    return videoId ? `https://www.youtube.com/embed/${videoId}` : null
-  } catch {
-    return null
-  }
-}
-
-function getYouTubeThumbnail(url?: string) {
-  if (!url) return null
-
-  try {
-    const parsed = new URL(url)
-
-    if (parsed.hostname.includes('youtu.be')) {
-      return `https://img.youtube.com/vi/${parsed.pathname.slice(1)}/hqdefault.jpg`
-    }
-
-    const videoId = parsed.searchParams.get('v')
-    return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null
-  } catch {
-    return null
   }
 }
 
@@ -74,13 +47,16 @@ export default function ProjectDetailPage({ params }: PageProps) {
     )
     .slice(0, 3)
 
-  const embedUrl = getYouTubeEmbedUrl(project.video_link)
-  const heroImage = getYouTubeThumbnail(project.video_link)
-  const matchingResourceGroups = driveResources.filter((group) =>
-    project.resource_group_slugs?.includes(group.slug)
-  )
-  const flatResources = matchingResourceGroups.flatMap((group) => group.resources)
   const archiveConfig = projectArchives[project.slug]
+  const flatResources = getProjectResources(project)
+  const previewResource = pickProjectPreviewResource(
+    flatResources,
+    archiveConfig?.hero_resource_title
+  )
+  const embedUrl = getYouTubeEmbedUrl(project.video_link)
+  const heroImage =
+    getYouTubeThumbnail(project.video_link) ??
+    (previewResource ? getResourcePreviewImage(previewResource) : null)
 
   return (
     <ProjectDetailExperience

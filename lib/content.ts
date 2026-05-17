@@ -1,5 +1,6 @@
 import content from './content.json'
 import driveFiles from './drive-files.json'
+import { driveResourceGroups } from './drive-links'
 import { projectArchiveConfigs } from './project-archives'
 import type {
   AboutContent,
@@ -171,7 +172,21 @@ export const showreelContent = {
   intro: content.showreel.intro,
 }
 
-export const driveResources: DriveResourceGroup[] = Array.from(generatedGroups.values())
+const generatedDriveResources = Array.from(generatedGroups.values())
+const curatedResourceSlugs = new Set(driveResourceGroups.map((group) => group.slug))
+
+export const driveResources: DriveResourceGroup[] = [
+  ...driveResourceGroups,
+  ...generatedDriveResources.filter((group) => !curatedResourceSlugs.has(group.slug)),
+]
+
+const driveResourcesBySlug = new Map(driveResources.map((group) => [group.slug, group.resources]))
+
+export function getProjectResources(project: Project) {
+  return (project.resource_group_slugs ?? []).flatMap(
+    (slug) => driveResourcesBySlug.get(slug) ?? []
+  )
+}
 
 export const projectArchives = projectArchiveConfigs
 

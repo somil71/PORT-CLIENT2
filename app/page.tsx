@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-// framer-motion is client-side only; avoid importing in server components
-import { homepageContent, projects, site } from '@/lib/content'
+import { homepageContent, projects, site, skills } from '@/lib/content'
+import { getYouTubeThumbnail } from '@/lib/project-media'
 
 export const metadata: Metadata = {
   title: site.title,
@@ -12,23 +12,6 @@ const featuredAccentMap: Record<string, string> = {
   'baahubali-teaser-vfx': 'rgba(197, 160, 89, 0.22)',
   'memory-corruption-comic': 'rgba(114, 216, 255, 0.24)',
   'raid-action-trailer': 'rgba(255, 148, 109, 0.2)',
-}
-
-function getYouTubeThumbnail(url?: string) {
-  if (!url) return null
-
-  try {
-    const parsed = new URL(url)
-
-    if (parsed.hostname.includes('youtu.be')) {
-      return `https://img.youtube.com/vi/${parsed.pathname.slice(1)}/hqdefault.jpg`
-    }
-
-    const videoId = parsed.searchParams.get('v')
-    return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null
-  } catch {
-    return null
-  }
 }
 
 export default function Home() {
@@ -93,7 +76,8 @@ export default function Home() {
                 Full-spectrum visual direction
               </h2>
               <p className="mt-4 text-sm leading-7 text-vision-text/68">
-                Work that moves like a short film: layered, polished, and designed to linger in memory.
+                Work that moves like a short film: layered, polished, and designed to linger in
+                memory.
               </p>
             </div>
 
@@ -124,15 +108,13 @@ export default function Home() {
           <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="eyebrow mb-3">Featured Work</p>
-              <h2
-                className="text-5xl gradient-text"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
+              <h2 className="text-5xl gradient-text" style={{ fontFamily: 'var(--font-heading)' }}>
                 {homepageContent.featured_projects.title}
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-vision-text/66">
-              A curated edit of cinema, motion design, and visual storytelling built around mood, texture, and detail.
+              A curated edit of cinema, motion design, and visual storytelling built around mood,
+              texture, and detail.
             </p>
           </div>
 
@@ -191,6 +173,44 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-8 md:py-12">
+        <div className="section-shell panel cinema-card rounded-[2rem] p-8 md:p-10">
+          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="eyebrow mb-3">Skills Snapshot</p>
+              <h2 className="text-5xl gradient-text" style={{ fontFamily: 'var(--font-heading)' }}>
+                Tools Behind the Work
+              </h2>
+            </div>
+            <Link href="/about" className="text-sm text-vision-cyan hover:text-vision-gold">
+              View full profile
+            </Link>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {[
+              { title: 'Animation & Motion', items: skills.technical, tone: 'text-vision-cyan' },
+              { title: 'Video & Post', items: skills.creative, tone: 'text-vision-gold' },
+              { title: 'Design & Software', items: skills.software, tone: 'text-vision-text/90' },
+            ].map((group) => (
+              <div key={group.title} className="panel-strong cinema-card rounded-[1.6rem] p-6">
+                <h3 className={`mb-4 text-lg font-semibold ${group.tone}`}>{group.title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/8 bg-white/[0.03] px-3 py-1 text-sm text-vision-text/72"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -1,8 +1,6 @@
-'use client'
-
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import DeferredIframe from '@/components/portfolio/DeferredIframe'
+import { getResourceKind, getResourcePreviewImage } from '@/lib/project-media'
 import type { DriveResource, Project, ProjectArchiveSection } from '@/lib/types'
 
 type Props = {
@@ -12,11 +10,6 @@ type Props = {
   resources: DriveResource[]
   archiveSections: ProjectArchiveSection[]
   relatedProjects: Project[]
-}
-
-const reveal = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0 },
 }
 
 function getProjectMode(project: Project) {
@@ -55,18 +48,6 @@ function getProjectMode(project: Project) {
   }
 }
 
-function getResourceKind(resource: DriveResource) {
-  const type = resource.type.toLowerCase()
-
-  if (type.includes('video') || resource.embed_url?.includes('/preview')) return 'video'
-  if (type.includes('gif')) return 'gif'
-  if (type.includes('image')) return 'image'
-  if (type.includes('pdf')) return 'pdf'
-  if (type.includes('html') || type.includes('css') || type.includes('javascript') || type.includes('text') || type.includes('docx') || type.includes('illustrator') || type.includes('after effects') || type.includes('premiere')) return 'doc'
-
-  return 'doc'
-}
-
 function getTileClass(resource: DriveResource, index: number) {
   const kind = getResourceKind(resource)
   const title = resource.title.toLowerCase()
@@ -81,11 +62,12 @@ function getTileClass(resource: DriveResource, index: number) {
 
 function renderMedia(resource: DriveResource) {
   const kind = getResourceKind(resource)
+  const previewImage = getResourcePreviewImage(resource)
 
-  if ((kind === 'image' || kind === 'gif') && resource.embed_url) {
+  if ((kind === 'image' || kind === 'gif') && previewImage) {
     return (
       <img
-        src={resource.embed_url}
+        src={previewImage}
         alt={resource.title}
         className="h-full w-full object-cover"
         loading="lazy"
@@ -154,13 +136,7 @@ export default function ProjectDetailExperience({
         </div>
       </section>
 
-      <motion.section
-        className="px-4 pb-10"
-        initial="hidden"
-        animate="visible"
-        variants={reveal}
-        transition={{ duration: 0.65, ease: 'easeOut' }}
-      >
+      <section className="px-4 pb-10">
         <div className="section-shell grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
           <div className="panel-strong cinema-card rounded-[2.2rem] p-8 md:p-10 xl:sticky xl:top-32 xl:h-fit">
             <div className="mb-5 flex flex-wrap gap-2">
@@ -205,11 +181,7 @@ export default function ProjectDetailExperience({
           </div>
 
           <div className="space-y-6">
-            <motion.div
-              className="panel cinema-card rounded-[2.2rem] p-4"
-              variants={reveal}
-              transition={{ delay: 0.1, duration: 0.65, ease: 'easeOut' }}
-            >
+            <div className="panel cinema-card rounded-[2.2rem] p-4">
               <div className="project-cover min-h-[26rem] rounded-[1.7rem]">
                 {embedUrl ? (
                   <DeferredIframe
@@ -247,13 +219,9 @@ export default function ProjectDetailExperience({
                   ) : null}
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="panel cinema-card rounded-[2rem] p-8"
-              variants={reveal}
-              transition={{ delay: 0.16, duration: 0.65, ease: 'easeOut' }}
-            >
+            <div className="panel cinema-card rounded-[2rem] p-8">
               <p className="eyebrow mb-3">Overview</p>
               <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
                 <div className="space-y-5 text-sm leading-8 text-vision-text/74 md:text-base">
@@ -268,20 +236,13 @@ export default function ProjectDetailExperience({
                   <p className="mt-3 text-sm leading-7 text-vision-text/74">{project.target_audience}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {project.process ? (
-        <motion.section
-          className="px-4 py-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={reveal}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
+        <section className="px-4 py-10">
           <div className="section-shell panel cinema-card rounded-[2rem] p-8 md:p-10">
             <div className="mb-8 flex items-end justify-between gap-4">
               <div>
@@ -312,18 +273,11 @@ export default function ProjectDetailExperience({
               ))}
             </div>
           </div>
-        </motion.section>
+        </section>
       ) : null}
 
       {visualResources.length > 0 ? (
-        <motion.section
-          className="px-4 py-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={reveal}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
+        <section className="px-4 py-10">
           <div className="section-shell">
             <div className="mb-8">
               <p className="eyebrow mb-3">{mode.mediaTitle}</p>
@@ -334,11 +288,9 @@ export default function ProjectDetailExperience({
 
             <div className="grid auto-rows-fr gap-6 md:grid-cols-2 xl:grid-cols-3">
               {visualResources.map((resource, index) => (
-                <motion.div
+                <div
                   key={`${resource.title}-${index}`}
                   className={`panel cinema-card overflow-hidden rounded-[1.7rem] p-3 ${getTileClass(resource, index)}`}
-                  variants={reveal}
-                  transition={{ delay: index * 0.04, duration: 0.55, ease: 'easeOut' }}
                 >
                   <div className="relative h-full overflow-hidden rounded-[1.2rem] border border-white/6 bg-black/30">
                     {renderMedia(resource)}
@@ -347,22 +299,15 @@ export default function ProjectDetailExperience({
                       <p className="mt-2 text-sm font-semibold text-white">{resource.title}</p>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
-        </motion.section>
+        </section>
       ) : null}
 
       {noteResources.length > 0 || project.reference_links?.length ? (
-        <motion.section
-          className="px-4 py-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={reveal}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
+        <section className="px-4 py-10">
           <div className="section-shell grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
             <div className="panel cinema-card rounded-[2rem] p-8">
               <p className="eyebrow mb-3">{mode.notesTitle}</p>
@@ -411,18 +356,11 @@ export default function ProjectDetailExperience({
               </div>
             </div>
           </div>
-        </motion.section>
+        </section>
       ) : null}
 
       {resolvedSections.length > 0 || remainingResources.length > 0 ? (
-        <motion.section
-          className="px-4 py-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={reveal}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
+        <section className="px-4 py-10">
           <div className="section-shell panel cinema-card rounded-[2rem] p-8 md:p-10">
             <div className="mb-8">
               <p className="eyebrow mb-3">{mode.archiveTitle}</p>
@@ -486,17 +424,10 @@ export default function ProjectDetailExperience({
               ) : null}
             </div>
           </div>
-        </motion.section>
+        </section>
       ) : null}
 
-      <motion.section
-        className="px-4 pb-24 pt-10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={reveal}
-        transition={{ duration: 0.65, ease: 'easeOut' }}
-      >
+      <section className="px-4 pb-24 pt-10">
         <div className="section-shell panel cinema-card rounded-[2rem] p-8 md:p-10">
           <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
@@ -527,7 +458,7 @@ export default function ProjectDetailExperience({
             ))}
           </div>
         </div>
-      </motion.section>
+      </section>
     </div>
   )
 }
